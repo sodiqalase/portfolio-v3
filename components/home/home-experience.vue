@@ -56,12 +56,12 @@
         }
 
         &__title {
-            font-size: 80px;
+            font-size: 70px;
 
             span {
                 display: flex;
-                line-height: 1.4;
-                text-transform: uppercase;
+                line-height: 1.3;
+                text-transform: capitalize;
 
                 &:nth-child(1){
                     margin-left: 200px;

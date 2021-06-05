@@ -1,7 +1,7 @@
 <template>
 <div>
     <nav class="section-container the-nav-bar">
-        <div class="the-nav-bar__logo">STUDIOLISE</div>
+        <div class="the-nav-bar__logo">7evenSTudio</div>
         <div class="the-nav-bar__links">
            <button class="the-nav-bar__links__btn btn--menu" :class="{ active: menuIsOpen }" @click="toggleMenuState">
                <span class="line"></span>
@@ -12,10 +12,11 @@
     </nav>
     <div class="the-nav-bar__menu" :class="{ isOpen : menuIsOpen }">
         <div class="the-nav-bar__menu__links">
-            <TheNavBarLink text="-Works" class="the-nav-bar__menu__link"/>
-            <TheNavBarLink text="Studio-" class="the-nav-bar__menu__link"/>
-            <TheNavBarLink text="Contact-" class="the-nav-bar__menu__link"/>
+            <a href="#" class="the-nav-bar__menu__link"><TheNavBarLink text="-Works"/></a>
+            <a href="#" class="the-nav-bar__menu__link"><TheNavBarLink text="Studio-"/></a>
+            <a href="#" class="the-nav-bar__menu__link"><TheNavBarLink text="Contact-"/></a>
         </div>
+        <TheFooter />
     </div>
 </div>
 </template>
@@ -46,13 +47,17 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 40px;
-    padding-bottom: 40px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 4;
     transform: translate(-50%);
     left: 50%;
+
+    &__logo {
+        font-weight: 900;
+        font-style: italic;
+    }
 
     &__links {
       .link {
@@ -109,17 +114,23 @@
         left: 0;
         z-index: 3;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         //closed by default
         pointer-events: none;
         transform: scale(1.5);
-        height: 0vh;
+        height: 100vh;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
         transition: .8s ease;
 
         &.isOpen {
             pointer-events: unset;
             transform: scale(1);
-            height: 100vh;
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
         }
        
 
@@ -131,9 +142,13 @@
             position: relative;
             z-index: 1;
         }
+
         &__link {
             font-size: 150px;
+            display: block;
             margin-left: 150px;
+            width: fit-content;
+            margin-bottom: 20px;
 
 
             &:nth-child(even){

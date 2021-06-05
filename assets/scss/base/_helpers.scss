@@ -11,3 +11,17 @@
     text-decoration: none;
   }
 }
+
+.flex {
+  display: flex;
+  
+  &--align-center {
+    @extend .flex;
+    align-items: center;
+  }
+
+  &--space-between {
+    @extend .flex;
+    justify-content: space-between;
+  }
+}

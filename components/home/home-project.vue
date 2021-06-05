@@ -1,19 +1,37 @@
 <template>
     <div class="home-project">
-        <div class="home-project__image" data-scroll data-scroll-speed="1" data-scroll-position="top"></div>
-        <div class="home-project__text" data-scroll data-scroll-speed="1.7" data-scroll-position="top">
+        <a target="_blank" :href="path" class="home-project__image">
+            <img :src="imageSrc" alt="" srcset="">
+        </a>
+        <div class="home-project__text" data-scroll data-scroll-speed=".5" data-scroll-position="top">
             <div class="home-project__text__info">
-                <p>/19</p>
-                <p>Finance</p>
+                <p>{{ year }}</p>
             </div>
-            <p class="home-project__text__name">Beezop / Web Branding Photography</p>
+            <p class="home-project__text__name">{{ projectTitle }}</p>
         </div>
     </div>
 </template>
 
 <script>
     export default {
-        
+        props: {
+            year: {
+                type: String,
+                default: "/20"
+            },
+            path: {
+                type: String,
+                default: "#"
+            },
+            imageSrc: {
+                type: String,
+                default: "/assets/img/chore-buddy.png"
+            },
+            projectTitle: {
+                type: String,
+                default: "Beezop / Web Branding Photography"
+            }
+        }
     }
 </script>
 
@@ -22,9 +40,26 @@
     flex-shrink: 0;
 
     &__image {
+        display: block;
         height: 250px;
         background: $black-secondary;
         margin-bottom: 24px;
+        position: relative;
+        overflow: hidden;
+
+        > img {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            transition: 1s;
+            object-position: top;
+            filter: brightness(.8);
+
+            &:hover {
+                filter: brightness(.5);
+                transform: scale(1.2);
+            }
+        }
     }
 
     &__text {

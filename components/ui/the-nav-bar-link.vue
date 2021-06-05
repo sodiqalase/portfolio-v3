@@ -1,10 +1,10 @@
 <template>
     <div class="the-nav-bar__link">
         <div class="word word--fake">
-            <span v-for="(letter, index) in text" :key="index" class="letter" :style="`--index: ${index};`">{{ letter }}</span>
+            <span v-for="(letter, index) in text" :key="index" class="letter" :style="`--index: ${index}; --color: ${color};`">{{ letter }}</span>
         </div>
         <div class="word">
-            <span v-for="(letter, index) in text" :key="index" class="letter" :style="`--index: ${index};`">{{ letter }}</span>
+            <span v-for="(letter, index) in text" :key="index" class="letter" :style="`--index: ${index}; --color: ${color};`">{{ letter }}</span>
         </div>
     </div>
 </template>
@@ -15,6 +15,10 @@
             text: {
                 type: String,
                 default: "Click here"
+            },
+            color: {
+                type: String,
+                default: "#fff"
             }
         }
     }
@@ -22,6 +26,7 @@
 
 <style lang="scss" scoped>
 .the-nav-bar{
+
     &__link {
         width: fit-content;
         position: relative;
@@ -41,15 +46,15 @@
             }
         }
         .word {
-            display: flex;
             line-height: 1;
 
             .letter {
                 transition: .4s ease;
                 transition-delay: calc(60ms * var(--index));
-                background: linear-gradient(0, transparent 0%, $white 60%);
+                background: linear-gradient(0, transparent 0%, var(--color) 60%);
                 background-clip: text;
                 color: transparent !important;
+                display: inline-block;
             }
 
             &--fake {

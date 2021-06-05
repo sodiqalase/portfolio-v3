@@ -2,8 +2,10 @@
   <main class="page-container">
     <TheNavBar />
     <div class="page js-locomote">
-       <Nuxt />
+      <Nuxt />
+      <TheFooter />
     </div>
+    <TheCursor />
   </main>
 </template>
 
@@ -20,13 +22,6 @@ export default {
               el: locomote,
               smooth: true
         });
-
-        scroll.on("scroll", (e) => {
-          console.log(e.scroll.y)
-        })
-         scroll.on("projectsInView", (e) => {
-          console.log("PROJECTS IN VIEW")
-        })
     })
   }
 }

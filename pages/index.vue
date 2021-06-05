@@ -2,9 +2,9 @@
   <div class="home-page">
     <div  data-scroll-section class="section-container home-page__hero">
       <div class="home-page__hero__text">
-          <p class="home-page__hero__heading" data-scroll data-scroll-speed="3" data-scroll-position="horizontal"> - Building</p>
-          <p class="home-page__hero__heading" data-scroll data-scroll-speed="2.5" data-scroll-position="horizontal"> With</p>
-          <p class="home-page__hero__heading" data-scroll data-scroll-speed="1" data-scroll-position="horizontal">Distinctions</p>
+          <p class="home-page__hero__heading" data-scroll data-scroll-speed="2.5" data-scroll-position="horizontal"> - Hey, there</p>
+          <p class="home-page__hero__heading" data-scroll data-scroll-speed="2" data-scroll-position="horizontal"> I am</p>
+          <p class="home-page__hero__heading" data-scroll data-scroll-speed="1" data-scroll-position="horizontal">Olamide</p>
           <p class="home-page__hero__description">I focus on improving the quality of front-end code by paying close attention to minor details with the help of grade A softwares and developer tools/processes.</p>
       </div>
       <div class="home-page__hero__illustration">
@@ -14,43 +14,49 @@
     </div>
     
     <div  data-scroll-section class="section-container home-page__talk">
-      <UnderlineLink>
-        <a href="#" class="link link--no-style">Let's talk</a>
-      </UnderlineLink>
+      <a href="mailto:sholankedaniel@gmail.com" class="link link--no-style">
+        <UnderlineLink> Let's talk </UnderlineLink>
+      </a>
     </div>
 
     <div class="section-container home-page__projects" data-scroll-section>
       <p class="home-page__projects__intro" data-scroll data-scroll-speed="2" data-scroll-position="horizontal">Works - </p>
       <div class="home-page__projects__main">
-        <HomeProject />
-        <HomeProject />
-        <HomeProject />
-        <HomeProject />
-        <HomeProject />
-        <HomeProject />
+        <HomeProject year="/21" path='https://beezop.netlify.app/' projectTitle='Beezop / Product and Project Management' imageSrc="/assets/img/beezop.png" />
+        <HomeProject path='https://www.rizevo.com/' projectTitle='Rizevo / Booking and Reservation' imageSrc="/assets/img/rizevo.png"/>
+        <HomeProject path='https://creft.io/' projectTitle='Creft / Social Networking' imageSrc="/assets/img/creft.png"/>
+        <HomeProject path='https://jaykay.design/#/' projectTitle='Jaykay / Personal and Professional Portfolio' imageSrc="/assets/img/jaykay.png"/>
+        <HomeProject path='http://chorebuddy.surge.sh/' projectTitle='Chore Buddy / Home Service' imageSrc="/assets/img/chore-buddy.png"/>
+        <HomeProject path='https://cruuunchify-clone.netlify.app/' projectTitle='Cruuunchify Clone / Media' imageSrc="/assets/img/crunchify.png"/>
       </div>
     </div>
 
     <div data-scroll-section class="home-page__huge-name__section">
       <div class="home-page__huge-name__container">
-        <div class="home-page__huge-name" data-scroll data-scroll-direction="horizontal" data-scroll-speed="20">
-          I'm moving in this direction, which is sooo cool!
+        <div class="home-page__huge-name" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">
+          Sholanke <i>Olamide</i> Daniel <i>Professional</i> developer
         </div>
       </div>
       <div class="home-page__huge-name__container">
-        <div class="home-page__huge-name" data-scroll data-scroll-direction="horizontal" data-scroll-speed="10">
-         SOOO CUSTOMIZABLE. RIGHT?
+        <div class="home-page__huge-name" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3">
+          <i>Professional</i> developer. Sholanke <i>Olamide</i> Daniel
         </div>
       </div>
       <div class="home-page__huge-name__container">
-        <div class="home-page__huge-name" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-30">
-          I'm moving in this direction, which is sooo cool!
+        <div class="home-page__huge-name" data-scroll data-scroll-direction="horizontal" data-scroll-speed="4">
+          Sholanke Daniel <i>Olamide</i> IS A <i>Professional</i> developer
         </div>
       </div>
     </div>
 
     <HomeExperience />
+    <HomeSkills />
 
+    <div data-scroll-section class="section-container home-page__contact">
+      <span class=" home-page__contact__circle"></span>
+      <p class="intro" data-scroll data-scroll-speed="1">Let's work together</p>
+      <a href="mailto:sholankedaniel@gmail.com"><TheNavBarLink text="-CONTACT-" data-scroll data-scroll-speed="2" class="the-nav-bar__menu__link home-page__contact__huge-link"/></a>
+    </div>
   </div>
 </template>
 
@@ -63,10 +69,9 @@ export default {
 
 <style lang="scss" scoped>
 .home-page{ 
-  min-height: 500vh;
   
   &__hero {
-    padding-top: 200px;
+    padding-top: 250px;
     display: flex;
     justify-content: space-between;
 
@@ -113,39 +118,33 @@ export default {
   }
 
   &__huge-name {
-    background: rgb(224, 224, 224);
-    color: $black;
+    color: transparent;
     width: fit-content;
     font-weight: 900;
-    font-size: 8vw;
+    font-size: 5.5vw;
     white-space: nowrap;
     text-transform: uppercase;
     line-height: 1;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(214, 214, 214);
+    
+    i {
+      -webkit-text-stroke-color: lighten($theme, 8px);
+    }
 
     &__section {
-      padding-top: 200px;
-      height: 700px;
+      margin-bottom: 200px;
+
     }
       
     &__container {
-      transform: translateX(0vw) rotate(15deg);
       transform-origin: center;
-      padding-bottom: 100px;
       width: 50vw;
-
-      &:nth-child(2) {
-        transform: translateX(0vw) rotate(0);
-        margin-top: -400px;
-      }
-      &:nth-child(3) {
-        transform: translateY(300px) translateX(-1000px)  rotate(-10deg);
-        margin-top: -150px;
-      }
     }
   }
 
   &__talk {
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     justify-content: flex-end;
     color: #fff;
@@ -156,10 +155,12 @@ export default {
   }
 
   &__projects {
+    margin-bottom: 200px;
+
     &__intro {
       font-size: $font-xlg-med;
       margin-top: 130px;
-      margin-bottom: 100px;
+      margin-bottom: 50px;
     }
 
     &__main {
@@ -168,6 +169,35 @@ export default {
       grid-template-columns: 1fr 1fr 1fr;
       align-items: center;
       grid-gap: 50px;
+    }
+  }
+
+  &__contact {
+    display: grid;
+    place-items: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    p.intro {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-size: $font-lg;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+      opacity: .7;
+      letter-spacing: 1px;
+    }
+
+    &__circle {
+      // display: block;
+      // width: 300px;
+      // height: 300px;
+      // border: 1px solid #fff;
+    }
+
+    &__huge-link {
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 10vw;
     }
   }
 }
