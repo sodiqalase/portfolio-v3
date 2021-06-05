@@ -3,7 +3,7 @@
         <a target="_blank" :href="path" class="home-project__image">
             <img :src="imageSrc" alt="" srcset="">
         </a>
-        <div class="home-project__text" data-scroll data-scroll-speed=".5" data-scroll-position="top">
+        <div class="home-project__text" data-scroll data-scroll-speed=".55" data-scroll-position="top">
             <div class="home-project__text__info">
                 <p>{{ year }}</p>
             </div>

@@ -9,7 +9,9 @@
       </div>
       <div class="home-page__hero__illustration">
           <div class="home-page__hero__illustration__line"></div>
-          <div class="home-page__hero__illustration__main"></div>
+          <div class="home-page__hero__illustration__main">
+            <HomeHeroAnimation />
+          </div>
         </div>
     </div>
     
@@ -92,6 +94,7 @@ export default {
         height: 100%;
         margin-right: auto;
         margin-left: auto;
+        position: relative;
       }
 
       &__line {
@@ -99,6 +102,7 @@ export default {
         width: 200px;
         background: $white;
         position: absolute;
+        z-index: 1;
         top: 70%;
         right: 0;
       }
