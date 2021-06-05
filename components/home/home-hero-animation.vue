@@ -1,6 +1,5 @@
 <template>
     <div class="home-page__hero-animation">
-        <!-- <img src="/assets/img/beezop.png" alt=""> -->
     </div>
 </template>
 
@@ -13,7 +12,6 @@
 <style lang="scss" scoped>
 .home-page {
     &__hero-animation {
-        // background-color: red;
         position: absolute;
         height: 100%;
         width: 100%;
