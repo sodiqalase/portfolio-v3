@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "Ogg";
+  src: url("../font/Ogg-Roman.woff2") format("woff2"),
+    url("../font/Ogg-Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  src: url("../font/HKGrotesk-Regular.woff2") format("woff2"),
+    url("../font/HKGrotesk-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import "./abstracts/variables";
+@import "./base/config";
+@import "./base/helpers";
+@import "./plugins/locomotive.scss";

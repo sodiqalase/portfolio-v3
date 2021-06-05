@@ -1,0 +1,16 @@
+* {
+  font-family: $font-family;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  object-fit: cover;
+  object-position: center;
+}
+
+body {
+  color: $white;
+  background: $black;
+}

@@ -1,0 +1,13 @@
+.section-container {
+  padding: 10px 60px;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link{
+  &--no-style {
+    color: inherit;
+    text-decoration: none;
+  }
+}
