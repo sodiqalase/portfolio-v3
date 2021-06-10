@@ -30,11 +30,15 @@
         margin-top: 20px;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         
-
         img {
             height: 50px;
             filter: grayscale(1);
+
+            @include mobile {
+                height: 30px;
+            }
 
             & + .spacer {
                 width: 1px;
@@ -43,6 +47,12 @@
                 margin: 0 40px;
                 transform: rotate(30deg);
                 height: 80px;
+
+                @include mobile {
+                    margin: 0 20px;
+                    transform: rotate(20deg);
+                    height: 50px;
+                }
             }
         }
     }
@@ -53,10 +63,20 @@
             font-size: $font-xlg;
             opacity: .8;
             margin-bottom: 40px;
+
+            @include mobile {
+                margin-left: 0;
+                font-size: $font-lg;
+            }
         }
 
         &__title {
             font-size: 70px;
+            
+            @include mobile {
+                margin-left: 0;
+                font-size: $font-xlg-med;
+            }
 
             span {
                 display: flex;
@@ -65,6 +85,10 @@
 
                 &:nth-child(1){
                     margin-left: 200px;
+
+                    @include mobile {
+                        margin-left: 0;
+                    }
                 }
             }
         }

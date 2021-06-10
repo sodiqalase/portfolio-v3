@@ -47,7 +47,7 @@
 <style lang="scss" scoped>
 .the-cursor {
     position: fixed;
-    z-index: 3;
+    z-index: 5;
     height: 8px;
     width: 8px;
     background: #fff;

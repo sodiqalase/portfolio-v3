@@ -5,6 +5,7 @@
       <Nuxt />
       <TheFooter />
     </div>
+    <!-- <TheLoader /> -->
     <TheCursor />
   </main>
 </template>
@@ -18,10 +19,11 @@ export default {
     const locomote = document.querySelector(".js-locomote")
   
     window.addEventListener("load", () => {
-        var scroll = new LocomotiveScroll({
-              el: locomote,
-              smooth: true
-        });
+      var scroll = new LocomotiveScroll({
+        el: locomote,
+        smooth: true,
+        smartphone: { smooth: true },
+      });
     })
   }
 }

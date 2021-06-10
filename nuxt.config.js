@@ -43,6 +43,6 @@ export default {
   build: {},
 
   styleResources: {
-    scss: ["./assets/scss/abstracts/_variables.scss"]
+    scss: ["./assets/scss/abstracts/_variables.scss", "./assets/scss/abstracts/_mixins.scss"]
   }
 };

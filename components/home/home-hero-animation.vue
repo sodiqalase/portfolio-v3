@@ -30,6 +30,8 @@
 <style lang="scss" scoped>
 
 .home-page {
+    will-change: contents;
+    
     &__hero-animation {
         background: $black-secondary;
         position: absolute;
@@ -47,6 +49,8 @@
 
             clip-path: circle(0.0% at 100% 100%);
 
+            will-change: clip-path, transition;
+
 
             img {
                 position: absolute;
@@ -54,6 +58,9 @@
                 width: 100%;
                 transform: scale(2.5);
                 transition: 1.5s;
+
+                will-change: transform;
+
 
             }
 

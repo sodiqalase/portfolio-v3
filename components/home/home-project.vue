@@ -3,7 +3,7 @@
         <a target="_blank" :href="path" class="home-project__image">
             <img :src="imageSrc" alt="" srcset="">
         </a>
-        <div class="home-project__text" data-scroll data-scroll-speed=".55" data-scroll-position="top">
+        <div class="home-project__text" data-scroll :data-scroll-speed="scrollSpeed" data-scroll-position="top">
             <div class="home-project__text__info">
                 <p>{{ year }}</p>
             </div>
@@ -30,6 +30,11 @@
             projectTitle: {
                 type: String,
                 default: "Beezop / Web Branding Photography"
+            }
+        },
+        computed: {
+            scrollSpeed() {
+                return window.innerWidth > 600 ? 0.55 : 0.2;
             }
         }
     }

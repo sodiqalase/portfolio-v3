@@ -3,7 +3,7 @@
        <div class="home-skills__intro">
            <p class="home-skills__intro__title" data-scroll data-scroll-speed="1">Skills and Languages - </p>
            <p class="home-skills__intro__description" data-scroll data-scroll-speed="2">
-               As you'll get to see in my <a href="#" class="link">Resume</a>, I've worked on multiple projects, building out UI with close attention to details. I've also had the opportunity to work with different frameworks like React and Vue, while constantly learning to improve my skillsets.
+               As you'll get to see in my <a href="https://drive.google.com/file/d/1HBi7W1dVKBTvPLTBC3h0fVYYMtg4CxT2/view?usp=sharing" class="link">Resume</a>, I've worked on multiple projects, building out UI with close attention to details. I've also had the opportunity to work with different frameworks like React and Vue, while constantly learning to improve my skillsets.
                <br> <br> I've been privileged to work with different companies in various sectors such as service industries, fintech, and social networking, thus I'm used to building for scale while optimizing for user experience.
            </p>
        </div>
@@ -38,9 +38,20 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    @include mobile {
+        grid-template-columns: 1fr;
+    }
+
     &__intro {
         padding-right: 60px;
         border-right: 1px solid $black-secondary;
+
+        @include mobile {
+            padding-right: 0px;
+            border-right: none;
+            margin-bottom: 70px;
+
+        }
 
         &__title {
             font-size: 24px;
@@ -55,6 +66,10 @@
     }
     &__main {
         padding-left: 60px;
+
+        @include mobile {
+            padding-left: 0px;
+        }
 
         &__skill {
             background: $black-purple;

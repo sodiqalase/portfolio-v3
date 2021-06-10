@@ -10,13 +10,6 @@
     </div>
 </template>
 
-<script>
-import underlineLink from './underline-link.vue'
-    export default {
-  components: { underlineLink },
-        
-    }
-</script>
 
 <style lang="scss" scoped>
 .the-footer {
@@ -24,10 +17,32 @@ import underlineLink from './underline-link.vue'
     padding-bottom: 80px;
     width: 100%;
 
+    @include mobile {
+        flex-wrap: wrap;
+        border-top: 1px solid rgba(255, 255, 255, 0.103);
+
+        > p { 
+            opacity: .5;
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
     &__links {
+
+        @include mobile {
+            flex-wrap: wrap;
+            justify-content: center ;
+        }
+
         .link {
             margin-right: 40px;
             font-size: 16px;
+
+            @include mobile {
+                margin: 0 20px 20px 20px;
+            }
         }
     }
 }

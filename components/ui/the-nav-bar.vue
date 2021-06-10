@@ -1,7 +1,7 @@
 <template>
 <div>
     <nav class="section-container the-nav-bar">
-        <div class="the-nav-bar__logo">7evenSTudio</div>
+        <div class="the-nav-bar__logo">Olamide|v3</div>
         <div class="the-nav-bar__links">
            <button class="the-nav-bar__links__btn btn--menu" :class="{ active: menuIsOpen }" @click="toggleMenuState">
                <span class="line"></span>
@@ -144,6 +144,11 @@
             margin-left: 150px;
             width: fit-content;
             margin-bottom: 20px;
+
+            @include mobile {
+                font-size: 60px;
+                margin-left: 40px;
+            }
 
 
             &:nth-child(even){

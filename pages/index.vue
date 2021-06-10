@@ -59,6 +59,7 @@
       <p class="intro" data-scroll data-scroll-speed="1">Let's work together</p>
       <a href="mailto:sholankedaniel@gmail.com"><TheNavBarLink text="-CONTACT-" data-scroll data-scroll-speed="2" class="the-nav-bar__menu__link home-page__contact__huge-link"/></a>
     </div>
+  
   </div>
 </template>
 
@@ -78,15 +79,29 @@ export default {
     justify-content: space-between;
     align-items: center;
 
+    @include mobile{ 
+      display: block;
+      padding-top: 200px;
+    }
+
     &__text {
       max-width: 500px;
       flex-shrink: 0;
       margin-right: 100px;
+
+      @include mobile {
+        max-width: unset;
+        margin-right: 0;
+      }
     }
 
     &__illustration {
       flex: 1;
       height: 500px;
+
+      @include mobile {
+        display: none;
+      }
 
       &__main {
         max-width: 400px;
@@ -111,6 +126,10 @@ export default {
     &__heading {
       font-size: $font-xxlg;
       line-height: 1;
+
+      @include mobile {
+        font-size: 60px;
+      }
     }
 
     &__description {
@@ -139,6 +158,9 @@ export default {
     &__section {
       margin-bottom: 200px;
 
+      @include mobile {
+        display: none;
+      }
     }
       
     &__container {
@@ -161,6 +183,10 @@ export default {
   &__projects {
     margin-bottom: 200px;
 
+    @include mobile {
+      margin-bottom: 20px;
+    }
+
     &__intro {
       font-size: $font-xlg-med;
       margin-top: 130px;
@@ -173,6 +199,12 @@ export default {
       grid-template-columns: 1fr 1fr 1fr;
       align-items: center;
       grid-gap: 50px;
+
+      @include mobile {
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+
+      }
     }
   }
 
@@ -182,6 +214,11 @@ export default {
     padding-top: 200px;
     padding-bottom: 200px;
 
+    @include mobile {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+
     p.intro {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-size: $font-lg;
@@ -189,12 +226,20 @@ export default {
       margin-bottom: 50px;
       opacity: .7;
       letter-spacing: 1px;
+
+      @include mobile {
+        font-size: 14px;
+      }
     }
 
     &__huge-link {
       margin-left: auto;
       margin-right: auto;
       font-size: 10vw;
+
+      @include mobile {
+        font-size: 12vw;
+      }
     }
   }
 }
