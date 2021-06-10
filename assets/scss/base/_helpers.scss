@@ -5,7 +5,9 @@
   margin-right: auto;
 }
 
-.link{
+.link {
+  color: lighten($theme, 20px);
+
   &--no-style {
     color: inherit;
     text-decoration: none;
@@ -14,7 +16,7 @@
 
 .flex {
   display: flex;
-  
+
   &--align-center {
     @extend .flex;
     align-items: center;

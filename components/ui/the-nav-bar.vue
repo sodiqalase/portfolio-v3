@@ -120,19 +120,14 @@
 
         //closed by default
         pointer-events: none;
-        transform: scale(1.5);
         height: 100vh;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: .8s ease;
+        transform: translate(0, -100%);
+        transition: .5s ease-out;
 
         &.isOpen {
             pointer-events: unset;
-            transform: scale(1);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-
+            transform: translate(0, 0);
         }
-       
 
         &__links {
             margin-top: 150px;

@@ -5,10 +5,10 @@
           <p class="home-page__hero__heading" data-scroll data-scroll-speed="2.5" data-scroll-position="horizontal"> - Hey, there</p>
           <p class="home-page__hero__heading" data-scroll data-scroll-speed="2" data-scroll-position="horizontal"> I am</p>
           <p class="home-page__hero__heading" data-scroll data-scroll-speed="1" data-scroll-position="horizontal">Olamide</p>
-          <p class="home-page__hero__description">I focus on improving the quality of front-end code by paying close attention to minor details with the help of grade A softwares and developer tools/processes.</p>
+          <p class="home-page__hero__description">I'm currently a Frontend Engineer Intern at <a href="https://flutterwave.com/" class="link">Flutterwave</a>, where I focus on improving the quality of frontend code by paying close attention to details with the help of grade A softwares and developer tools/processes.</p>
       </div>
       <div class="home-page__hero__illustration">
-          <div class="home-page__hero__illustration__line"></div>
+          <div class="home-page__hero__illustration__line"  data-scroll data-scroll-speed="1" data-scroll-position="horizontal"></div>
           <div class="home-page__hero__illustration__main">
             <HomeHeroAnimation />
           </div>
@@ -73,9 +73,10 @@ export default {
 .home-page{ 
   
   &__hero {
-    padding-top: 250px;
+    padding-top: 180px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     &__text {
       max-width: 500px;
@@ -85,11 +86,10 @@ export default {
 
     &__illustration {
       flex: 1;
-      position: relative;
+      height: 500px;
 
       &__main {
-        background: $black-secondary;
-        max-width: 500px;
+        max-width: 400px;
         width: 100%;
         height: 100%;
         margin-right: auto;
@@ -99,12 +99,12 @@ export default {
 
       &__line {
         height: 1px;
-        width: 200px;
+        width: 300px;
         background: $white;
-        position: absolute;
         z-index: 1;
+        position: absolute;
         top: 70%;
-        right: 0;
+        right: 10px;
       }
     }
 
@@ -189,13 +189,6 @@ export default {
       margin-bottom: 50px;
       opacity: .7;
       letter-spacing: 1px;
-    }
-
-    &__circle {
-      // display: block;
-      // width: 300px;
-      // height: 300px;
-      // border: 1px solid #fff;
     }
 
     &__huge-link {

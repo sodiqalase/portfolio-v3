@@ -3,7 +3,8 @@
        <div class="home-skills__intro">
            <p class="home-skills__intro__title" data-scroll data-scroll-speed="1">Skills and Languages - </p>
            <p class="home-skills__intro__description" data-scroll data-scroll-speed="2">
-               I am Sholanke Olamide, a creative and passionate software developer and UI enthusiast who focuses on building products that solves real problems through enjoyable and meaningful experiences. <br> <br> But before all these things, I am a fast and open minded learner willing to accept and learn from my mistakes.
+               As you'll get to see in my <a href="#" class="link">Resume</a>, I've worked on multiple projects, building out UI with close attention to details. I've also had the opportunity to work with different frameworks like React and Vue, while constantly learning to improve my skillsets.
+               <br> <br> I've been privileged to work with different companies in various sectors such as service industries, fintech, and social networking, thus I'm used to building for scale while optimizing for user experience.
            </p>
        </div>
        <div class="home-skills__main">
