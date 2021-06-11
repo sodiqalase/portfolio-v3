@@ -82,6 +82,10 @@ $loaderTime: 4s;
             background: $theme;
             animation-name: loadOut;
         }
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &:after {
@@ -109,7 +113,6 @@ $loaderTime: 4s;
         100% {
             transform: translate(0, 0);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-
             pointer-events: none;
         }
     }
