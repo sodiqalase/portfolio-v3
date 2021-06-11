@@ -2,7 +2,7 @@
   <div class="home-page">
     <div  data-scroll-section class="section-container home-page__hero">
       <div class="home-page__hero__text">
-          <p class="home-page__hero__heading" data-scroll data-scroll-speed="2.5" data-scroll-position="horizontal"> - Hey, there</p>
+          <p class="home-page__hero__heading" data-scroll data-scroll-speed="2.5" data-scroll-position="horizontal"> - Hey there,</p>
           <p class="home-page__hero__heading" data-scroll data-scroll-speed="2" data-scroll-position="horizontal"> I am</p>
           <p class="home-page__hero__heading" data-scroll data-scroll-speed="1" data-scroll-position="horizontal">Olamide</p>
           <p class="home-page__hero__description">I'm currently a Frontend Engineer Intern at <a href="https://flutterwave.com/" class="link">Flutterwave</a>, where I focus on improving the quality of frontend code by paying close attention to details with the help of grade A softwares and developer tools/processes.</p>
@@ -21,7 +21,7 @@
       </a>
     </div>
 
-    <div class="section-container home-page__projects" data-scroll-section>
+    <div id="works" class="section-container home-page__projects" data-scroll-section>
       <p class="home-page__projects__intro" data-scroll data-scroll-speed="2" data-scroll-position="horizontal">Works - </p>
       <div class="home-page__projects__main">
         <HomeProject year="/21" path='https://beezop.netlify.app/' projectTitle='Beezop / Product and Project Management' imageSrc="/assets/img/beezop.png" />

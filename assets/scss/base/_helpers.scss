@@ -11,6 +11,7 @@
 
 .link {
   color: lighten($theme, 20px);
+  background: transparent;
 
   &--no-style {
     color: inherit;

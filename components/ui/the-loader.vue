@@ -29,11 +29,12 @@
 .the-loader {
     position: fixed;
     z-index: 4;
-    top: 0;
+    bottom: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: $black-alternate;
+    background-color: $theme;
+    
     
     will-change: contents;
 
@@ -44,16 +45,46 @@
     animation-duration: .5s;
     animation-fill-mode: forwards;
     animation-name: loadOut;
-    animation-delay: 7.5s;
+    animation-delay: 5s;
+
+    &:after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: $black;
+        transform: translate(-100%,0);
+
+        animation-duration: 7s;
+        animation-fill-mode: forwards;
+        animation-name: loadProgress;
+        animation-timing-function: cubic-bezier( 0.79, 0.33, 0.14, 0.53 );
+    }
+
+     @keyframes loadProgress {
+        0% {
+            transform: translate(-100%,0);
+            clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+
+        }
+        100% {
+            transform: translate(0,0);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+            pointer-events: none;
+        }
+    }
 
     @keyframes loadOut {
         0% {
-            transform: translate(0, 0);
+            transform: scale(1);
             opacity: 1;
         }
         100% {
             opacity: 0;
-            transform: translate(-100px, 0);
+            transform: scale(1.2);
             pointer-events: none;
         }
     }
@@ -79,6 +110,7 @@
                 animation-name: load;
                 animation-duration: 8s;
                 animation-fill-mode: forwards;
+                animation-timing-function: cubic-bezier( 0.79, 0.33, 0.14, 0.53 );
 
             }
 
