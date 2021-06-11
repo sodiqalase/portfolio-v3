@@ -31,6 +31,10 @@
     color: inherit;
     text-decoration: none;
   }
+
+  &--no-decoration {
+    text-decoration: none;
+  }
 }
 
 .flex {

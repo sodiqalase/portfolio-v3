@@ -1,12 +1,17 @@
 <template>
-    <div class="underline-link">
+    <div class="underline-link" :style="`--line-color: ${decorationColor};`">
         <slot/>
     </div>
 </template>
 
 <script>
     export default {
-        
+        props: {
+            decorationColor: {
+                default: "#fff",
+                type: String
+            }
+        }
     }
 </script>
 
@@ -14,15 +19,16 @@
 .underline-link {
     position: relative;
     overflow: hidden;
-    padding-top: 4px;
     padding-bottom: 4px;
     letter-spacing: 1px;
+    display: inline-block;
+    line-height: 1;
+    transform: translateY(30%);
 
     &:hover {
         &::after {
             transform: translateX(100%);
             transition-delay: 0s;
-
         }
         &::before {
             transform: translateX(0);
@@ -36,7 +42,7 @@
         display: block;
         height: 1px;
         width: 100%;
-        background: $white;
+        background: var(--line-color);
         position: absolute;
         bottom: 0;
         transition: .3s ease-out;
