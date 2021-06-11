@@ -81,6 +81,11 @@ $loaderTime: 4s;
         &.start {
             background: $theme;
             animation-name: loadOut;
+
+            @include mobile {
+                touch-action: unset;
+                pointer-events: unset;
+            }
         }
     }
 
@@ -109,8 +114,6 @@ $loaderTime: 4s;
         100% {
             transform: translate(0, 0);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-            pointer-events: none;
-            touch-action: none;
         }
     }
 
@@ -118,6 +121,8 @@ $loaderTime: 4s;
         0% {
             transform: scale(1);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            touch-action: unset;
+            pointer-events: unset;
         }
         100% {
             transform: scale(4);
