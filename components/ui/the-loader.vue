@@ -63,6 +63,7 @@ $loaderTime: 4s;
         z-index: 4;
         bottom: 0;
         left: 0;
+        transition: .5s ease;
 
         animation-duration: 2.5s;
         animation-fill-mode: forwards;
