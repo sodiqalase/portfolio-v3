@@ -84,7 +84,8 @@ $loaderTime: 4s;
         }
 
         @include mobile {
-            display: none;
+            pointer-events: none;
+            touch-action: none;
         }
     }
 
