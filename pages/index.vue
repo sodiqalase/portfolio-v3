@@ -184,7 +184,7 @@ export default {
     margin-bottom: 200px;
 
     @include mobile {
-      margin-bottom: 20px;
+      margin-bottom: 100px;
     }
 
     &__intro {
@@ -202,7 +202,7 @@ export default {
 
       @include mobile {
         grid-template-columns: 1fr;
-        grid-gap: 20px;
+        grid-gap: 60px;
 
       }
     }

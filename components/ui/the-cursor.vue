@@ -58,6 +58,10 @@
     top: calc(var(--top) - 4px);
     left: calc(var(--left) - 4px);
 
+    @include mobile {
+        display: none;
+    }
+
     &[data-hover="true"]{
         border: 2px solid #fff;
         background: rgba(255, 255, 255, 0.322);
