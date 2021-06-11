@@ -26,13 +26,11 @@ export default {
   methods: {
     initLocomote() {
       const locomote = document.querySelector(".js-locomote")
-
-      if (window.innerWidth > 600){
-        window.locomotiveScroll = new LocomotiveScroll({
-          el: locomote,
-          smooth: true,
-        });
-      }
+      window.locomotiveScroll = new LocomotiveScroll({
+        el: locomote,
+        smooth: true,
+        smartphone: { smooth: true },
+      });
     }
   }
 }
