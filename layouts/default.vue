@@ -16,7 +16,6 @@ import LocomotiveScroll from 'locomotive-scroll';
 
 export default {
   created() {
-
     if(document.readyState === "complete") {
       this.initLocomote()
     }else {

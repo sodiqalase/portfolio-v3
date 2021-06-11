@@ -78,14 +78,14 @@ $loaderTime: 4s;
         animation-delay: $loaderTime - 1;
         animation-timing-function: cubic-bezier( 0.79, 0.33, 0.14, 0.53 );
 
+        @include mobile {
+            touch-action: none;
+            pointer-events: none;
+        }
+
         &.start {
             background: $theme;
             animation-name: loadOut;
-
-            @include mobile {
-                touch-action: unset;
-                pointer-events: unset;
-            }
         }
     }
 
