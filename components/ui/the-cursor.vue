@@ -16,8 +16,12 @@
             }
         },
 
-        mounted(){
-            window.addEventListener("load", this.initCursor)
+        created(){
+            if(document.readyState === "complete") {
+               this.initCursor();
+            }else {
+                window.addEventListener("load", () => { this.initCursor() });
+            }
         },
 
         methods:{

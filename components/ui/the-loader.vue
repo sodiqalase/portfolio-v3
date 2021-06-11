@@ -20,7 +20,6 @@
             }
         },
         created(){
-
             if(document.readyState === "complete") {
                 this.initLoader()
             }else {

@@ -15,15 +15,25 @@
 import LocomotiveScroll from 'locomotive-scroll';
 
 export default {
-  mounted() {
-    const locomote = document.querySelector(".js-locomote")
-  
-    window.addEventListener("load", () => {
-      window.locomotiveScroll = new LocomotiveScroll({
-        el: locomote,
-        smooth: true,
-      });
-    })
+  created() {
+
+    if(document.readyState === "complete") {
+      this.initLocomote()
+    }else {
+      window.addEventListener("load", () => { this.initLocomote() })
+    }
+  }, 
+  methods: {
+    initLocomote() {
+      const locomote = document.querySelector(".js-locomote")
+
+      if (window.innerWidth > 600){
+        window.locomotiveScroll = new LocomotiveScroll({
+          el: locomote,
+          smooth: true,
+        });
+      }
+    }
   }
 }
 </script>
