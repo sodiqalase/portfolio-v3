@@ -82,11 +82,6 @@ $loaderTime: 4s;
             background: $theme;
             animation-name: loadOut;
         }
-
-        @include mobile {
-            pointer-events: none;
-            touch-action: none;
-        }
     }
 
     &:after {
@@ -115,6 +110,7 @@ $loaderTime: 4s;
             transform: translate(0, 0);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             pointer-events: none;
+            touch-action: none;
         }
     }
 
@@ -126,7 +122,7 @@ $loaderTime: 4s;
         100% {
             transform: scale(4);
             clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
-
+            touch-action: none;
             pointer-events: none;
         }
     }
