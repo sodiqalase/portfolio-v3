@@ -1,5 +1,5 @@
 <template>
-    <div class="the-loader__container">
+    <div class="the-loader__container" v-bind:class="{start: startLoader}">
         <div class="the-loader" v-bind:class="{start: startLoader}">
             <p class="the-loader__counter">'
                 <span class="tens">0</span>
@@ -53,7 +53,6 @@ $loaderTime: 4s;
 
     &.start {
         display: flex;
-    
     }
 
     &__container {
@@ -67,9 +66,12 @@ $loaderTime: 4s;
 
         animation-duration: 2.5s;
         animation-fill-mode: forwards;
-        animation-name: loadOut;
         animation-delay: $loaderTime - 1;
         animation-timing-function: cubic-bezier( 0.79, 0.33, 0.14, 0.53 );
+
+        &.start {
+            animation-name: loadOut;
+        }
     }
 
     &:after {
