@@ -19,10 +19,11 @@
                 counterNumbers: [0, 5, 17, 20, 26, 30, 35, 40, 49, 54, 63, 67, 70, 74, 79, 83, 84, 90, 97, 98, 99]
             }
         },
-        mounted(){
+        created(){
             window.addEventListener("load", () => { 
                 this.startLoader = true;
-                setTimeout(()=> {
+
+                setTimeout(() => {
                     this.$store.dispatch("initHeroAnimation")
                 }, 4500)
             })
