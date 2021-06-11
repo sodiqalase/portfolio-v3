@@ -2,10 +2,14 @@
   <div class="home-page">
     <div  data-scroll-section class="section-container home-page__hero">
       <div class="home-page__hero__text">
-          <p class="home-page__hero__heading" data-scroll data-scroll-speed="2.5" data-scroll-position="horizontal"> - Hey there,</p>
-          <p class="home-page__hero__heading" data-scroll data-scroll-speed="2" data-scroll-position="horizontal"> I am</p>
-          <p class="home-page__hero__heading" data-scroll data-scroll-speed="1" data-scroll-position="horizontal">Olamide</p>
-          <p class="home-page__hero__description">I'm currently a Frontend Engineer Intern at <a href="https://flutterwave.com/" class="link">Flutterwave</a>, where I focus on improving the quality of frontend code by paying close attention to details with the help of grade A softwares and developer tools/processes.</p>
+          <p class="home-page__hero__heading fade-up-container" data-scroll data-scroll-speed="2.5" data-scroll-position="horizontal"><span class="pre-fade-up" :class="{'fade-up': initHeroAnimation}"> - Hey there,</span></p>
+          <p class="home-page__hero__heading fade-up-container" data-scroll data-scroll-speed="2" data-scroll-position="horizontal"> <span class="pre-fade-up" :class="{'fade-up': initHeroAnimation}">I am</span> </p>
+          <p class="home-page__hero__heading fade-up-container" data-scroll data-scroll-speed="1" data-scroll-position="horizontal"><span class="pre-fade-up" :class="{'fade-up': initHeroAnimation}">Olamide</span> </p>
+          <p class="home-page__hero__description fade-up-container">
+            <span class="pre-fade-up" :class="{'fade-up': initHeroAnimation}">
+              I'm currently a Frontend Engineer Intern at <a href="https://flutterwave.com/" class="link">Flutterwave</a>, where I focus on improving the quality of frontend code by paying close attention to details with the help of grade A softwares and developer tools/processes.
+            </span>
+          </p>
       </div>
       <div class="home-page__hero__illustration">
           <div class="home-page__hero__illustration__line"  data-scroll data-scroll-speed="1" data-scroll-position="horizontal"></div>
@@ -66,6 +70,11 @@
 
 <script>
 export default {
+  computed: {
+    initHeroAnimation() {
+      return this.$store.getters.initHeroAnimation
+    }
+  }
 
 }
 </script>

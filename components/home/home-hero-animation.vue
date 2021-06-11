@@ -1,5 +1,5 @@
 <template>
-    <div class="home-page__hero-animation">
+    <div class="home-page__hero-animation" :class="{show: $store.getters.initHeroAnimation}">
         <div class="img-container" data-is-active="true">
             <img :src="images[images.length - 1]" alt="">
         </div>
@@ -14,7 +14,7 @@
     export default {
         data() {
             return {
-                images: ["/assets/img/olamide.png", "/assets/img/olamide.jpeg", "/assets/img/olamide-2.png"],
+                images: ["/assets/img/olamide.png", "/assets/img/olamide-2.png", "/assets/img/olamide.jpeg"],
                 activeImageIndex: 0
             }
         },
@@ -22,7 +22,7 @@
         mounted() {
             setInterval(()=> {
                 this.activeImageIndex = this.activeImageIndex === this.images.length - 1 ? -1 : this.activeImageIndex + 1
-            }, 4000)
+            }, 4200)
         },
     }
 </script>
@@ -37,6 +37,15 @@
         position: absolute;
         height: 100%;
         width: 100%;
+
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+        transition: .8s ease;
+
+
+
+        &.show {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
 
         .img-container {
             position: absolute;

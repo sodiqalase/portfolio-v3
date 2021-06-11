@@ -9,6 +9,20 @@
   }
 }
 
+.pre-fade-up {
+  transform: translate(0, 100%);
+  display: inline-block;
+  transition: 1s ease;
+
+  &.fade-up {
+    transform: translate(0, 0);
+  }
+}
+
+.fade-up-container {
+  overflow: hidden;
+}
+
 .link {
   color: lighten($theme, 20px);
   background: transparent;
