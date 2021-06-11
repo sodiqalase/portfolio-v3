@@ -10,7 +10,7 @@
     export default {
         data(){
             return {
-                cursorPositionOnXAxis: 0,
+                cursorPositionOnXAxis: -900,
                 cursorPositionOnYAxis: 0,
                 isHoveringOnButton: false,
             }

@@ -56,7 +56,7 @@ $loaderTime: 4s;
     }
 
     &__container {
-        background: $theme;
+        background: $black;
         position: fixed;
         height: 100%;
         width: 100%;
@@ -70,6 +70,7 @@ $loaderTime: 4s;
         animation-timing-function: cubic-bezier( 0.79, 0.33, 0.14, 0.53 );
 
         &.start {
+            background: $theme;
             animation-name: loadOut;
         }
     }
@@ -110,7 +111,7 @@ $loaderTime: 4s;
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
         }
         100% {
-            transform: scale(3);
+            transform: scale(4);
             clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 
             pointer-events: none;
