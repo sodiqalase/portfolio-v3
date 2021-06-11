@@ -29,7 +29,6 @@ export default {
       window.locomotiveScroll = new LocomotiveScroll({
         el: locomote,
         smooth: true,
-        smartphone: { smooth: true },
       });
     }
   }
