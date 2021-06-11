@@ -20,16 +20,23 @@
             }
         },
         created(){
+
+            if(document.readyState === "complete") {
+                this.initLoader()
+            }else {
             window.addEventListener("load", () => { 
+                this.initLoader()
+            })}
+        },
+        methods: {
+            initLoader(){
                 this.startLoader = true;
 
                 setTimeout(() => {
                     console.log("Initialized Loader>>>")
                     this.$store.dispatch("initHeroAnimation")
                 }, 4500)
-            })
-        },
-        methods: {
+            },
             numberToCounter(i) {
                 return `${i}`.length < 2 ? `0${i}` : i 
             }
