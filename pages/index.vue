@@ -28,7 +28,7 @@
     <div id="works" class="section-container home-page__projects" data-scroll-section>
       <p class="home-page__projects__intro" data-scroll data-scroll-speed="2" data-scroll-position="horizontal">Works - </p>
       <div class="home-page__projects__main">
-        <HomeProject year="/21" path='https://beezop.netlify.app/' projectTitle='Beezop / Product and Project Management' imageSrc="/assets/img/beezop.png" />
+        <HomeProject year="/21" path='https://beezop.com/' projectTitle='Beezop / Product and Project Management' imageSrc="/assets/img/beezop.png" />
         <HomeProject path='https://www.rizevo.com/' projectTitle='Rizevo / Booking and Reservation' imageSrc="/assets/img/rizevo.png"/>
         <HomeProject path='https://creft.io/' projectTitle='Creft / Social Networking' imageSrc="/assets/img/creft.png"/>
         <HomeProject path='https://jaykay.design/#/' projectTitle='Jaykay / Personal and Professional Portfolio' imageSrc="/assets/img/jaykay.png"/>
