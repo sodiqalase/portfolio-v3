@@ -13,7 +13,7 @@
     <div class="the-nav-bar__menu" :class="{ isOpen : menuIsOpen }">
         <div class="the-nav-bar__menu__links">
             <button class="the-nav-bar__menu__link" @click="goTo(`#works`)"><TheNavBarLink text="-Works"/></button>
-            <a href="https://drive.google.com/file/d/1HBi7W1dVKBTvPLTBC3h0fVYYMtg4CxT2/view?usp=sharing" target="_blank" class="the-nav-bar__menu__link" @click="toggleMenuState"><TheNavBarLink text="Resume-"/></a>
+            <a href="https://drive.google.com/file/d/1rPydzuy3C5AKUiTbYQ14tbIh-re3q84t/view?usp=sharing" target="_blank" class="the-nav-bar__menu__link" @click="toggleMenuState"><TheNavBarLink text="Resume-"/></a>
             <a href="mailto:sholankedaniel@gmail.com" class="the-nav-bar__menu__link" target="_blank"><TheNavBarLink text="Contact-"/></a>
         </div>
         <TheFooter />
