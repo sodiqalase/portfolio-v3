@@ -14,7 +14,13 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "Hey there, I am Olamide, and I'm a Frontend Engineer currently based in Lagos Nigeria." }
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Hey there, I am Olamide, and I'm a Frontend Engineer currently based in Lagos Nigeria."
+      },
+      { hid: "og:image", property: "og:image", content: "/logo.png" }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
@@ -43,6 +49,9 @@ export default {
   build: {},
 
   styleResources: {
-    scss: ["./assets/scss/abstracts/_variables.scss", "./assets/scss/abstracts/_mixins.scss"]
+    scss: [
+      "./assets/scss/abstracts/_variables.scss",
+      "./assets/scss/abstracts/_mixins.scss"
+    ]
   }
 };
