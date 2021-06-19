@@ -22,7 +22,10 @@ export default {
       },
       { hid: "og:image", property: "og:image", content: "/logo.png" }
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "apple-touch-icon", href: "/logo.png" }
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
