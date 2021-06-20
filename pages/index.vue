@@ -157,12 +157,8 @@ export default {
     white-space: nowrap;
     text-transform: uppercase;
     line-height: 1;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(214, 214, 214);
-    
-    i {
-      -webkit-text-stroke-color: lighten($theme, 8px);
-    }
+    color: #fff;
+    opacity: .8;
 
     &__section {
       margin-bottom: 200px;
@@ -174,7 +170,8 @@ export default {
       
     &__container {
       transform-origin: center;
-      width: 50vw;
+      // background: rgba(255, 255, 255, 0.904);
+      margin: 2px 0;
     }
   }
 
