@@ -157,8 +157,14 @@ export default {
     white-space: nowrap;
     text-transform: uppercase;
     line-height: 1;
-    color: #fff;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #fff;
+    font-weight: 900;
     opacity: .8;
+
+    i {
+      -webkit-text-stroke-color: lighten($theme, 20px);
+    }
 
     &__section {
       margin-bottom: 200px;
