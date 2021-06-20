@@ -22,6 +22,7 @@
             }else {
                 window.addEventListener("load", () => { this.initCursor() });
             }
+            
         },
 
         methods:{

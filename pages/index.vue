@@ -37,7 +37,7 @@
       </div>
     </div>
 
-    <div data-scroll-section class="home-page__huge-name__section">
+    <!-- <div data-scroll-section class="home-page__huge-name__section">
       <div class="home-page__huge-name__container">
         <div class="home-page__huge-name" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">
           Sholanke <i>Olamide</i> Daniel <i>Professional</i> developer
@@ -53,7 +53,7 @@
           Sholanke Daniel <i>Olamide</i> IS A <i>Professional</i> developer
         </div>
       </div>
-    </div>
+    </div> -->
 
     <HomeExperience />
     <HomeSkills />

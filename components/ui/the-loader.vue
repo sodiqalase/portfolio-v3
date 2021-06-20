@@ -23,9 +23,10 @@
             if(document.readyState === "complete") {
                 this.initLoader()
             }else {
-            window.addEventListener("load", () => { 
-                this.initLoader()
-            })}
+                window.addEventListener("load", () => { 
+                    this.initLoader()
+                })
+            }
         },
         methods: {
             initLoader(){
@@ -98,6 +99,7 @@ $loaderTime: 4s;
         left: 0;
         background: $black-alternate;
         transform: translate(-100%,0);
+
 
         animation-duration: $loaderTime;
         animation-fill-mode: forwards;
