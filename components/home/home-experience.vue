@@ -27,7 +27,7 @@
 .home-experience {
 
     &__logos {
-        margin-top: 20px;
+        margin-top: 40px;
         display: flex;
         align-items: center;
         flex-wrap: wrap;
@@ -80,7 +80,7 @@
 
             span {
                 display: flex;
-                line-height: 1.3;
+                line-height: 2;
                 text-transform: capitalize;
 
                 &:nth-child(1){
