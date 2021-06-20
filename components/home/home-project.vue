@@ -51,6 +51,7 @@
         margin-bottom: 24px;
         position: relative;
         overflow: hidden;
+        border-radius: 4px;
 
         > img {
             height: 100%;
