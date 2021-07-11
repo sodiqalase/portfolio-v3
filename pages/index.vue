@@ -49,7 +49,7 @@
     
     <HomeSkills />
 
-    <HomeIceBreaker />
+    <!-- <HomeIceBreaker /> -->
 
     <div data-scroll-section class="section-container home-page__contact">
       <span class=" home-page__contact__circle"></span>
