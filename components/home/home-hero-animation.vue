@@ -17,8 +17,8 @@
     export default {
         data() {
             return {
-                images: ["/assets/img/olamide.png", "/assets/img/olamide-2.png", "/assets/img/olamide.jpeg"],
-                // images: ["https://i.pinimg.com/564x/5e/c1/ec/5ec1ec2c3d585b9bfca2a1a60e70ad90.jpg", "https://mir-s3-cdn-cf.behance.net/projects/original/8006a234921117.Y3JvcCwxNTAwLDExNzIsMCww.jpg", "https://mir-s3-cdn-cf.behance.net/projects/original/ad38c029297537.55ec81eb9e80b.jpg", "https://dr.savee-cdn.com/things/thumbnails/5/9/9d9598a1ff1f1ea2636456.jpg"],
+                // images: ["/assets/img/olamide.png", "/assets/img/olamide-2.png", "/assets/img/olamide.jpeg"],
+                images: ["https://i.pinimg.com/564x/5e/c1/ec/5ec1ec2c3d585b9bfca2a1a60e70ad90.jpg", "https://mir-s3-cdn-cf.behance.net/projects/original/8006a234921117.Y3JvcCwxNTAwLDExNzIsMCww.jpg", "https://mir-s3-cdn-cf.behance.net/projects/original/ad38c029297537.55ec81eb9e80b.jpg", "https://dr.savee-cdn.com/things/thumbnails/5/9/9d9598a1ff1f1ea2636456.jpg"],
                 activeImageIndex: 0
             }
         },

@@ -100,6 +100,7 @@ export default {
     &__illustration {
       flex: 1;
       height: 500px;
+      position: relative;
 
       @include mobile {
         display: none;
