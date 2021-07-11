@@ -3,8 +3,8 @@
         <div class="home-experience__intro">
             <p class="home-experience__intro__small-text"> - Experience</p>
             <p class="home-experience__intro__title">
-                <span data-scroll data-scroll-speed="1" data-scroll-position="horizontal">Some places</span>
-                <span data-scroll data-scroll-speed="2" data-scroll-position="horizontal">I've worked</span>
+                <span data-scroll data-scroll-speed="1" data-scroll-position="horizontal">Some Companies</span>
+                <span data-scroll data-scroll-speed="2" data-scroll-position="horizontal">I've Worked With</span>
             </p>
             <div class="home-experience__logos" data-scroll data-scroll-speed="3" data-scroll-position="horizontal">
                 <img src="/assets/logos/flutterwave.svg" /> <span class="spacer"></span>
@@ -13,7 +13,6 @@
                 <img src="/assets/logos/africave.svg" />
             </div>
         </div>
-     
     </div>
 </template>
 

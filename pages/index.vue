@@ -26,7 +26,7 @@
     </div>
 
     <div id="works" class="section-container home-page__projects" data-scroll-section>
-      <p class="home-page__projects__intro" data-scroll data-scroll-speed="2" data-scroll-position="horizontal">Works - </p>
+      <p class="home-page__projects__intro" data-scroll data-scroll-speed="2" data-scroll-position="horizontal">Projects - </p>
       <div class="home-page__projects__main">
         <HomeProject year="/21" path='https://beezop.com/' projectTitle='Beezop / Product and Project Management' imageSrc="/assets/img/beezop.png" />
         <HomeProject path='https://www.rizevo.com/' projectTitle='Rizevo / Booking and Reservation' imageSrc="/assets/img/rizevo.png"/>
@@ -37,31 +37,24 @@
       </div>
     </div>
 
-    <!-- <div data-scroll-section class="home-page__huge-name__section">
+    <div data-scroll-section class="home-page__huge-name__section">
       <div class="home-page__huge-name__container">
-        <div class="home-page__huge-name" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">
-          Sholanke <i>Olamide</i> Daniel <i>Professional</i> developer
+        <div class="home-page__huge-name" data-scroll data-scroll-direction="horizontal" data-scroll-speed="8">
+          Sholanke Olamide | Frontend Developer | Creative Developer
         </div>
       </div>
-      <div class="home-page__huge-name__container">
-        <div class="home-page__huge-name" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-3">
-          <i>Professional</i> developer. Sholanke <i>Olamide</i> Daniel
-        </div>
-      </div>
-      <div class="home-page__huge-name__container">
-        <div class="home-page__huge-name" data-scroll data-scroll-direction="horizontal" data-scroll-speed="4">
-          Sholanke Daniel <i>Olamide</i> IS A <i>Professional</i> developer
-        </div>
-      </div>
-    </div> -->
+    </div>
 
     <HomeExperience />
+    
     <HomeSkills />
+
+    <HomeIceBreaker />
 
     <div data-scroll-section class="section-container home-page__contact">
       <span class=" home-page__contact__circle"></span>
       <p class="intro" data-scroll data-scroll-speed="1">Let's work together</p>
-      <a href="mailto:sholankedaniel@gmail.com"><TheNavBarLink text="-CONTACT-" data-scroll data-scroll-speed="2" class="the-nav-bar__menu__link home-page__contact__huge-link"/></a>
+      <a href="mailto:sholankedaniel@gmail.com"><TheNavBarLink text="-CONTACT-" data-scroll data-scroll-speed="3" class="the-nav-bar__menu__link home-page__contact__huge-link"/></a>
     </div>
   
   </div>
@@ -152,22 +145,20 @@ export default {
   &__huge-name {
     color: transparent;
     width: fit-content;
-    font-weight: 900;
     font-size: 5.5vw;
     white-space: nowrap;
     text-transform: uppercase;
     line-height: 1;
     -webkit-text-stroke: 1px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.678);
     font-weight: 900;
-    opacity: .8;
 
     i {
       -webkit-text-stroke-color: lighten($theme, 20px);
     }
 
     &__section {
-      margin-bottom: 200px;
+      margin-bottom: 150px;
 
       @include mobile {
         display: none;
@@ -176,8 +167,21 @@ export default {
       
     &__container {
       transform-origin: center;
-      // background: rgba(255, 255, 255, 0.904);
+      padding: 40px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       margin: 2px 0;
+      position: relative;
+
+      &:after {
+        content: "" ;
+        top: -1px;
+        height: 1px;
+        width: 100%;
+        max-width: 600px;
+        background: $theme;
+        position: absolute;
+      }
     }
   }
 
@@ -193,7 +197,7 @@ export default {
   }
 
   &__projects {
-    margin-bottom: 200px;
+    margin-bottom: 100px;
 
     @include mobile {
       margin-bottom: 100px;
@@ -235,7 +239,7 @@ export default {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-size: $font-lg;
       text-transform: uppercase;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
       opacity: .7;
       letter-spacing: 1px;
 
