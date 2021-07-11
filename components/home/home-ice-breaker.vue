@@ -49,7 +49,7 @@
         <div class="home-ice-breaker__text">
             <p class="home-ice-breaker__text__intro">Ice Breakers -</p>
             <p class="home-ice-breaker__text__description">
-                I love listening to Afro beats music, here’s my <a href="/" target="_blank" class="link link--no-decoration"><UnderlineLink decoration-color="#b6e69a">Spotify Profile</UnderlineLink></a>. I also enjoy traveling and exotic dishes (work with me so I can fund this).  <a href="/" target="_blank" class="link link--no-decoration"><UnderlineLink decoration-color="#b6e69a">Reach Out</UnderlineLink></a>  to know more about me.
+                I love listening to Afro beats music, here’s my <a href="https://open.spotify.com/user/31aifest5ka6k7lbu6ojqjgjmaxm?si=adcc8a93a80b4909" target="_blank" class="link link--no-decoration"><UnderlineLink decoration-color="#b6e69a">Spotify Profile</UnderlineLink></a>. I also enjoy traveling and exotic dishes (work with me so I can fund this).  <a href="mailto:sholankedaniel@gmail.com" target="_blank" class="link link--no-decoration"><UnderlineLink decoration-color="#b6e69a">Reach Out</UnderlineLink></a>  to know more about me.
             </p>
         </div>
     </div>
