@@ -240,7 +240,7 @@ export default {
       font-size: $font-lg;
       text-transform: uppercase;
       margin-bottom: 40px;
-      opacity: .7;
+      opacity: .75;
       letter-spacing: 1px;
 
       @include mobile {

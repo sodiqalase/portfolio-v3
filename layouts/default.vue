@@ -1,12 +1,18 @@
 <template>
   <main class="page-container">
-    <TheNavBar />
-    <div class="page js-locomote">
-      <Nuxt />
-      <TheFooter />
+
+    <TheBackground />
+
+    <div class="page-container__page-content">
+      <TheNavBar />
+      <div class="page js-locomote">
+        <Nuxt />
+        <TheFooter />
+      </div>
+      <TheLoader />
+      <TheCursor />
     </div>
-    <TheLoader />
-    <TheCursor />
+
   </main>
 </template>
 
@@ -25,6 +31,7 @@ export default {
   methods: {
     initLocomote() {
       console.log("Initiated Locomotive Successfully>>>")
+      
       const locomote = document.querySelector(".js-locomote")
       window.locomotiveScroll = new LocomotiveScroll({
         el: locomote,
@@ -36,4 +43,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.page-container {
+  &__page-content {
+    position: relative;
+    z-index: 1;
+  }
+}
 </style>

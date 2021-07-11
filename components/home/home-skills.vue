@@ -60,7 +60,7 @@
             line-height: 1.5;
             font-size: 21px;
             line-height: 1.9;
-            opacity: .7;
+            opacity: .75;
             margin-top: 40px;
         }
     }

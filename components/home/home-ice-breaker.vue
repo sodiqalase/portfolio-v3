@@ -2,7 +2,7 @@
     <div class="home-ice-breaker" data-scroll-section>
         <div class="home-ice-breaker__image">
 
-            <div class="row" data-scroll data-scroll-direction="horizontal" data-scroll-speed="5">
+            <div class="row">
                 <HomeSong />
                 <HomeSong image="https://372673.smushcdn.com/318461/wp-content/uploads/2021/07/Sinner-artwork-1024x1024.png?lossy=1&strip=1&webp=1" :info="{name: `Sinner`, artist: `Adekunle Gold`}" />
                 <HomeSong image="https://media.pitchfork.com/photos/60d3557d00ab865e7d9d73e9/1:1/w_600/Doja%20Cat:%20Planet%20Her.jpeg" :info="{name: `Woman`, artist: `Doja Cat`}"/>
@@ -11,44 +11,32 @@
                 <HomeSong image="https://372673.smushcdn.com/318461/wp-content/uploads/2021/07/Sinner-artwork-1024x1024.png?lossy=1&strip=1&webp=1"  />
                 <HomeSong image="https://media.pitchfork.com/photos/60d3557d00ab865e7d9d73e9/1:1/w_600/Doja%20Cat:%20Planet%20Her.jpeg"/>
                 <HomeSong image="https://cdns-images.dzcdn.net/images/cover/9955047483278bd0f93420951226ac44/350x350.jpg" />
-                <HomeSong />
-                <HomeSong image="https://372673.smushcdn.com/318461/wp-content/uploads/2021/07/Sinner-artwork-1024x1024.png?lossy=1&strip=1&webp=1" />
-                <HomeSong image="https://media.pitchfork.com/photos/60d3557d00ab865e7d9d73e9/1:1/w_600/Doja%20Cat:%20Planet%20Her.jpeg"/>
-                <HomeSong image="https://cdns-images.dzcdn.net/images/cover/9955047483278bd0f93420951226ac44/350x350.jpg" />
-            </div>
+                </div>
 
-            <div class="row" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2">
+            <div class="row">
                 <HomeSong image="https://i0.wp.com/dnewz.com.ng/wp-content/uploads/2021/05/Mereba-%E2%80%93-AZEB-EP.jpg?fit=678%2C678&ssl=1" :info="{name: `Rider`, artist: `Mereba`}"/>
                 <HomeSong image="https://372673.smushcdn.com/318461/wp-content/uploads/2021/06/Soundgasm-art-1024x1024.jpeg?lossy=1&strip=1&webp=1" :info="{name: `Soundgasm`, artist: `Rema`}"/>
                 <HomeSong image="https://ratedrnb.com/cdn/2021/04/Jorja-Smith.png" :info="{name: `Home`, artist: `Jorja Smith`}"/>
                 <HomeSong image="https://i0.wp.com/dnewz.com.ng/wp-content/uploads/2021/05/Mereba-%E2%80%93-AZEB-EP.jpg?fit=678%2C678&ssl=1"/>
                 <HomeSong image="https://372673.smushcdn.com/318461/wp-content/uploads/2021/06/Soundgasm-art-1024x1024.jpeg?lossy=1&strip=1&webp=1"/>
                 <HomeSong image="https://ratedrnb.com/cdn/2021/04/Jorja-Smith.png"/>
-                <HomeSong image="https://i0.wp.com/dnewz.com.ng/wp-content/uploads/2021/05/Mereba-%E2%80%93-AZEB-EP.jpg?fit=678%2C678&ssl=1"/>
-                <HomeSong image="https://372673.smushcdn.com/318461/wp-content/uploads/2021/06/Soundgasm-art-1024x1024.jpeg?lossy=1&strip=1&webp=1"/>
-                <HomeSong image="https://ratedrnb.com/cdn/2021/04/Jorja-Smith.png"/>
-   
             </div>
 
-            <div class="row" data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">
+            <div class="row">
                 <HomeSong image="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Burna_Boy_-_African_Giant.png/220px-Burna_Boy_-_African_Giant.png" :info="{name: `Ye`, artist: `Burna Boy`}"/>
                 <HomeSong image="https://media.pitchfork.com/photos/5fa6fce323b17a901fd1ec65/1:1/w_600/Wizkid.jpg" :info="{name: `No Stress`, artist: `Big Wiz`}"/>
                 <HomeSong image="https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Benny_Blanco%2C_Halsey_and_Khalid_Eastside.png/220px-Benny_Blanco%2C_Halsey_and_Khalid_Eastside.png" :info="{name: `Eastside(with Halsey & Khalid)`, artist: `Blanco, Halsey, Khalid`}"/>
                 <HomeSong image="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Burna_Boy_-_African_Giant.png/220px-Burna_Boy_-_African_Giant.png"/>
                 <HomeSong image="https://media.pitchfork.com/photos/5fa6fce323b17a901fd1ec65/1:1/w_600/Wizkid.jpg"/>
                 <HomeSong image="https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Benny_Blanco%2C_Halsey_and_Khalid_Eastside.png/220px-Benny_Blanco%2C_Halsey_and_Khalid_Eastside.png"/>
-                <HomeSong image="https://upload.wikimedia.org/wikipedia/en/thumb/6/6e/Burna_Boy_-_African_Giant.png/220px-Burna_Boy_-_African_Giant.png"/>
-                <HomeSong image="https://media.pitchfork.com/photos/5fa6fce323b17a901fd1ec65/1:1/w_600/Wizkid.jpg"/>
-                <HomeSong image="https://upload.wikimedia.org/wikipedia/en/thumb/2/21/Benny_Blanco%2C_Halsey_and_Khalid_Eastside.png/220px-Benny_Blanco%2C_Halsey_and_Khalid_Eastside.png"/>
-            
             </div>
 
 
 
         </div>
         <div class="home-ice-breaker__text">
-            <p class="home-ice-breaker__text__intro">Ice Breakers -</p>
-            <p class="home-ice-breaker__text__description">
+            <p class="home-ice-breaker__text__intro" data-scroll data-scroll-speed="1">Ice Breakers -</p>
+            <p class="home-ice-breaker__text__description" data-scroll data-scroll-speed="1.5">
                 I love listening to Afro beats music, here’s my <a href="https://open.spotify.com/user/31aifest5ka6k7lbu6ojqjgjmaxm?si=adcc8a93a80b4909" target="_blank" class="link link--no-decoration"><UnderlineLink decoration-color="#b6e69a">Spotify Profile</UnderlineLink></a>. I also enjoy traveling and exotic dishes (work with me so I can fund this).  <a href="mailto:sholankedaniel@gmail.com" target="_blank" class="link link--no-decoration"><UnderlineLink decoration-color="#b6e69a">Reach Out</UnderlineLink></a>  to know more about me.
             </p>
         </div>
@@ -65,6 +53,7 @@
 .home-ice-breaker {
     display: flex;
     margin: 250px 0 50px 0;
+    align-items: center;
 
     @include mobile {
         flex-direction: column-reverse;
@@ -75,6 +64,7 @@
         overflow: hidden;
         position: relative;
         padding: 30px 0;
+        max-width: 50vw;
 
         &::after {
             content: "";
@@ -84,7 +74,7 @@
             right: -2px;
             pointer-events: none;
             top: 0;
-            background: linear-gradient(270deg, #131414, transparent);
+            background: linear-gradient(270deg, $black, transparent);
         }
 
         .row {
@@ -121,7 +111,7 @@
             line-height: 1.5;
             font-size: 21px;
             line-height: 1.9;
-            opacity: .7;
+            opacity: .75;
             margin-top: 40px;
         }
     }
