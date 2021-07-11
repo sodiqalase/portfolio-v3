@@ -74,6 +74,7 @@
         flex: 1;
         overflow: hidden;
         position: relative;
+        padding: 30px 0;
 
         &::after {
             content: "";
@@ -81,6 +82,7 @@
             width: 40%;
             position: absolute;
             right: -2px;
+            pointer-events: none;
             top: 0;
             background: linear-gradient(270deg, #131414, transparent);
         }
@@ -89,6 +91,7 @@
             display: flex;
             flex-wrap: nowrap;
             white-space: nowrap;
+            overflow: visible;
             
             &:nth-child(2){
                 transform: translateX(-70px);

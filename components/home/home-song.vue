@@ -1,5 +1,5 @@
 <template>
-    <div class="home-ice-breaker__image__song">
+    <div class="home-ice-breaker__image__song cursor-pointer">
         <div class="image" :style="{'background-image': `url(${image})`}"></div>
         <div class="title">
             <strong>
@@ -35,10 +35,15 @@
             align-items: center;
             padding: 15px 10px;
             margin: 20px 0 20px 20px;
-            background: rgba(255, 255, 255, 0.02);
+            background: rgb(27, 29, 29);
             box-shadow: 0 0 30px rgba(0, 0, 0, 0.342);
-            min-width: 220px;
+            min-width: 230px;
             border-radius: 5px;
+            transition: .1s ease-out;
+
+            &:hover {
+                transform: scale(1.1);
+            }
 
             @include mobile{ 
                 min-width: 200px;
