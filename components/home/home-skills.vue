@@ -3,7 +3,7 @@
        <div class="home-skills__intro">
            <p class="home-skills__intro__title" data-scroll data-scroll-speed="1">Skills and Languages - </p>
            <p class="home-skills__intro__description" data-scroll data-scroll-speed="2">
-               As you'll get to see in my <a href="https://drive.google.com/file/d/1rPydzuy3C5AKUiTbYQ14tbIh-re3q84t/view?usp=sharing" target="_blank" class="link link--no-decoration"><UnderlineLink decoration-color="#b6e69a">Resume</UnderlineLink></a>, I've worked on multiple projects, building out UI with close attention to details. I've also had the opportunity to work with different frameworks like React and Vue, while constantly learning to improve my skillsets.
+               As you'll get to see in my <a href="https://drive.google.com/file/d/1Y2YI8iBV0oHcrOhCL9YM3ao0IYOqSS3A/view" target="_blank" class="link link--no-decoration"><UnderlineLink decoration-color="#b6e69a">Resume</UnderlineLink></a>, I've worked on multiple projects, building out UI with close attention to details. I've also had the opportunity to work with different frameworks like React and Vue, while constantly learning to improve my skillsets.
                <br> <br> I've been privileged to work with different companies in various sectors such as service industries, fintech, and social networking, thus I'm used to building for scale while optimizing for user experience.
            </p>
        </div>
