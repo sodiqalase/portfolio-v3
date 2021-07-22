@@ -20,11 +20,11 @@ export default {
         content:
           "Hey there, I am Olamide, and I'm a Frontend Engineer currently based in Lagos Nigeria."
       },
-      { property: "og:image", content: "%PUBLIC_URL%/logo.png" }
+      { hid: "og:image", property: "og:image", content: "/logo.png" }
     ],
     link: [
       { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
-      { rel: "apple-touch-icon", href: "%PUBLIC_URL%/logo.png" }
+      { rel: "apple-touch-icon", href: "/logo.png" }
     ]
   },
 
