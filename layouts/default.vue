@@ -21,7 +21,7 @@
 import LocomotiveScroll from 'locomotive-scroll';
 
 export default {
-  mounted() {
+  created() {
     if(document.readyState === "complete") {
       this.initLocomote()
     }else {
