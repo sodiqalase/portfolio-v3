@@ -30,9 +30,12 @@ export default {
   }, 
   methods: {
     initLocomote() {
-      console.log("Initiated Locomotive Successfully>>>")
       
       const locomote = document.querySelector(".js-locomote")
+      
+      console.log(document.readyState)
+      console.log("Initiated Locomotive Successfully>>>", locomote)
+
       window.locomotiveScroll = new LocomotiveScroll({
         el: locomote,
         smooth: true,
