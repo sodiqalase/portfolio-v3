@@ -21,7 +21,7 @@
 import LocomotiveScroll from 'locomotive-scroll';
 
 export default {
-  created() {
+  mounted() {
     if(document.readyState === "complete") {
       this.initLocomote()
     }else {
@@ -31,8 +31,8 @@ export default {
   methods: {
     initLocomote() {
       
-      const locomote = document.querySelector(".js-locomote")
-      
+      const locomote = this.$el.querySelector(".js-locomote")
+
       console.log(document.readyState)
       console.log("Initiated Locomotive Successfully>>>", locomote)
 

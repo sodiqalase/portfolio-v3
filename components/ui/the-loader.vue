@@ -33,7 +33,6 @@
                 this.startLoader = true;
 
                 setTimeout(() => {
-                    console.log("Initialized Loader>>>")
                     this.$store.dispatch("initHeroAnimation")
                 }, 4500)
             },

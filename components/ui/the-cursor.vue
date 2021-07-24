@@ -16,7 +16,7 @@
             }
         },
 
-        created(){
+        mounted(){
             if(document.readyState === "complete") {
                this.initCursor();
             }else {
@@ -37,7 +37,6 @@
 
                 buttons.forEach((button) =>{
                     button.addEventListener("mouseover", () => {
-                        console.log('mouse enter triggered')
                         this.isHoveringOnButton = true
                     })
                     button.addEventListener("mouseout", () => {
