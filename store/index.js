@@ -1,5 +1,9 @@
 export const state = () => ({
-  initHeroAnimation: false
+  initHeroAnimation: false,
+  mousePosition: {
+    x: 0,
+    y: 0
+  }
 });
 
 export const mutations = {
@@ -11,9 +15,13 @@ export const mutations = {
 export const actions = {
   initHeroAnimation({ commit }) {
     commit("set", ["initHeroAnimation", true]);
+  },
+  setMousePosition({ commit }, position) {
+    commit("set", ["mousePosition", position]);
   }
 };
 
 export const getters = {
-  initHeroAnimation: state => state.initHeroAnimation
+  initHeroAnimation: state => state.initHeroAnimation,
+  mousePosition: state => state.mousePosition
 };

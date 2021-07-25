@@ -2,7 +2,6 @@
   <main class="page-container">
 
     <TheBackground />
-
     <div class="page-container__page-content">
       <TheNavBar />
       <div class="page js-locomote">
@@ -32,9 +31,6 @@ export default {
     initLocomote() {
       
       const locomote = this.$el.querySelector(".js-locomote")
-
-      console.log(document.readyState)
-      console.log("Initiated Locomotive Successfully>>>", locomote)
 
       window.locomotiveScroll = new LocomotiveScroll({
         el: locomote,

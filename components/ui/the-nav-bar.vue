@@ -126,11 +126,18 @@
         pointer-events: none;
         height: 100vh;
         transform: translate(0, -100%);
+
         transition: .5s ease-out;
 
         &.isOpen {
             pointer-events: unset;
             transform: translate(0, 0);
+
+
+            .the-nav-bar__menu__link {
+                opacity: 1;
+                // transition-delay: .6s;
+            }
         }
 
         &__links {
@@ -150,6 +157,10 @@
             margin-bottom: 20px;
             background: transparent;
             border: 0;
+
+
+            // opacity: 0;
+            // transition: 1s ease-out;
 
             @include mobile {
                 font-size: 60px;

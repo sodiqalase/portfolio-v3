@@ -8,6 +8,7 @@
                 </span>
             </p>
         </div>
+
     </div>
 </template>
 
@@ -19,7 +20,8 @@
                 counterNumbers: [0, 5, 17, 20, 26, 30, 35, 40, 49, 54, 63, 67, 70, 74, 79, 83, 84, 90, 97, 98, 99]
             }
         },
-        created(){
+
+        mounted(){
             if(document.readyState === "complete") {
                 this.initLoader()
             }else {
@@ -28,6 +30,7 @@
                 })
             }
         },
+
         methods: {
             initLoader(){
                 this.startLoader = true;
@@ -36,6 +39,7 @@
                     this.$store.dispatch("initHeroAnimation")
                 }, 4500)
             },
+
             numberToCounter(i) {
                 return `${i}`.length < 2 ? `0${i}` : i 
             }

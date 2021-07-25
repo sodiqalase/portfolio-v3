@@ -1,5 +1,6 @@
 <template>
     <div class="the-background">
+        <!-- <div class="the-background__cursor" :style="`--top: ${cursorPositionOnYAxis}px; --left: ${cursorPositionOnXAxis}px`"></div> -->
         <span v-for="(_, i) in Array.from({length: numberOfBoxes})" :key="i"></span>
     </div>
 </template>
@@ -10,9 +11,17 @@
             numberOfBoxes(){
                 return this.window.innerWidth > 600 ? 160 : 50
             },
+
             window(){
                 return window
-            }
+            },
+
+            cursorPositionOnXAxis(){
+                return this.$store.getters.mousePosition.x
+            },
+            cursorPositionOnYAxis(){
+                return this.$store.getters.mousePosition.y
+            },
         }
         
     }
@@ -36,10 +45,23 @@
         grid-template-rows: repeat(10, 1fr);
     }
 
+    &__cursor {
+        height: 200px;
+        width: 200px;
+        background: #fff;
+        opacity: .3;
+        position: absolute;
+        filter: blur(300px);
+
+        top: calc(var(--top) - 100px);
+        left: calc(var(--left) - 100px);
+    }
+
     span {
         font-weight: 900;
         background: $black;
         border-radius: 10px;
+        position: relative;
     }
 }
 </style>

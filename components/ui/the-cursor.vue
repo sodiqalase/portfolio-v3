@@ -3,6 +3,9 @@
         <span class="the-cursor" :data-hover="isHoveringOnButton" :style="`--top: ${cursorPositionOnYAxis}px; --left: ${cursorPositionOnXAxis}px`">
         </span>
         <span class="the-cursor--border" :data-hover="isHoveringOnButton" :style="`--top: ${cursorPositionOnYAxis}px; --left: ${cursorPositionOnXAxis}px`"></span>
+
+        <audio id="sleep-sound" loop src="/assets/sleep.mp3"/>
+
     </div>
 </template>
 
@@ -10,8 +13,6 @@
     export default {
         data(){
             return {
-                cursorPositionOnXAxis: -900,
-                cursorPositionOnYAxis: 0,
                 isHoveringOnButton: false,
             }
         },
@@ -22,7 +23,15 @@
             }else {
                 window.addEventListener("load", () => { this.initCursor() });
             }
-            
+        },
+
+        computed :{
+            cursorPositionOnXAxis(){
+                return this.$store.getters.mousePosition.x
+            },
+            cursorPositionOnYAxis(){
+                return this.$store.getters.mousePosition.y
+            },
         },
 
         methods:{
@@ -31,8 +40,13 @@
                 const buttons = w.querySelectorAll("button, a, .cursor-pointer")
 
                 w.addEventListener('mousemove', (e) => {
-                    this.cursorPositionOnXAxis = e.x
-                    this.cursorPositionOnYAxis = e.y
+                    const sleepSound = this.$el.querySelector("#sleep-sound")
+                    sleepSound.volume = .4;
+                    try{ 
+                        // sleepSound.play()
+                    }catch{
+                    }
+                    this.$store.dispatch("setMousePosition", {x: e.x, y:e.y})
                 });
 
                 buttons.forEach((button) =>{
@@ -43,7 +57,8 @@
                         this.isHoveringOnButton = false
                     })
                 })
-            }
+            },
+
         }
     }
 </script>
@@ -84,7 +99,7 @@
         width: 150px;
         border: 1px solid #fff;
         background: transparent !important;
-        transition: .3s ease-out;
+        transition: .35s ease-out;
         opacity: .3;
 
         &[data-hover="true"]{

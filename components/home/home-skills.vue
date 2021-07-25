@@ -72,9 +72,12 @@
         }
 
         &__skill {
-            background: $black-purple;
+            // background: $black-purple;
             padding: 10px 20px;
             border-left: 2px solid $theme;
+
+            background: rgba(162, 165, 214, 0.082);
+            backdrop-filter: blur(5px);
             font-weight: 600;
             font-size: 14px;
             display: inline-block;

@@ -16,6 +16,19 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../font/CircularStd-Medium.woff2') format('woff2'),
+      url('../font/CircularStd-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
 @import "./base/config";

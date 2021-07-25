@@ -173,6 +173,8 @@ export default {
       border-bottom: 1px solid rgba(255, 255, 255, 0.08);
       margin: 2px 0;
       position: relative;
+      background: rgba(42, 43, 56, 0.1);
+      backdrop-filter: blur(5px);
 
       &:after {
         content: "" ;
