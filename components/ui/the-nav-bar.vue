@@ -11,12 +11,18 @@
         </div>
     </nav>
     <div class="the-nav-bar__menu" :class="{ isOpen : menuIsOpen }">
-        <div class="the-nav-bar__menu__links">
-            <button class="the-nav-bar__menu__link" @click="goTo(`#works`)"><TheNavBarLink text="-Works"/></button>
-            <a href="https://drive.google.com/file/d/1Y2YI8iBV0oHcrOhCL9YM3ao0IYOqSS3A/view" target="_blank" class="the-nav-bar__menu__link" @click="toggleMenuState"><TheNavBarLink text="Resume-"/></a>
-            <a href="mailto:sholankedaniel@gmail.com" class="the-nav-bar__menu__link" target="_blank"><TheNavBarLink text="Contact-"/></a>
+        <div class="the-nav-bar__menu__bg">
+            <span></span><span></span><span></span><span></span>
         </div>
-        <TheFooter />
+        
+        <div class="the-nav-bar__menu__content">
+            <div class="the-nav-bar__menu__links">
+                <button class="the-nav-bar__menu__link" @click="goTo(`#works`)"><TheNavBarLink text="-Works"/></button>
+                <a href="https://drive.google.com/file/d/1Y2YI8iBV0oHcrOhCL9YM3ao0IYOqSS3A/view" target="_blank" class="the-nav-bar__menu__link" @click="toggleMenuState"><TheNavBarLink text="Resume-"/></a>
+                <a href="mailto:sholankedaniel@gmail.com" class="the-nav-bar__menu__link" target="_blank"><TheNavBarLink text="Contact-"/></a>
+            </div>
+            <TheFooter />
+        </div>
     </div>
 </div>
 </template>
@@ -114,23 +120,74 @@
         position: fixed;
         top: 0;
         width: 100%;
-        background: $theme;
+        // background: $theme;
         left: 0;
         z-index: 3;
         overflow: hidden;
         display: flex;
         flex-direction: column;
+        height: 100vh;
         justify-content: space-between;
 
         //closed by default
         pointer-events: none;
-        height: 100vh;
-        transform: translate(0, -100%);
-        transition: .5s ease-out;
+
+        &__bg {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+
+            span {
+                background: $theme;
+                transition: .5s ease;
+                border: 1px solid rgba(255, 255, 255, 0.01);
+          
+
+                &:last-child {
+                    border-right: none;
+                }
+
+                //hide 
+                transform: translate(0, -100%);
+
+                @for $n from 1 through 4 {
+                    &:nth-child(#{$n}) {
+                        transition-delay: 0.15s * $n;
+                    }
+                } 
+            }
+        }
+
+        &__content {
+            height: 100vh;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+
+            // hide
+            opacity: 0;
+            transition: .4s ease-out;
+
+        }
 
         &.isOpen {
             pointer-events: unset;
-            transform: translate(0, 0);
+
+            .the-nav-bar__menu__bg {
+                span {
+                    transform: translate(0, 0);
+                }
+            }
+
+            .the-nav-bar__menu__content {
+                opacity: 1;
+                transition-delay: .8s;
+            }
+
         }
 
         &__links {
