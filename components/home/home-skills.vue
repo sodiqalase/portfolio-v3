@@ -11,6 +11,7 @@
            <span class="home-skills__main__skill" style="--lang-color: red;">NUXT JS</span>
            <span class="home-skills__main__skill" style="--lang-color: red;">VUE JS</span>
            <span class="home-skills__main__skill" style="--lang-color: red;">REACT JS</span>
+           <span class="home-skills__main__skill" style="--lang-color: red;">ANGULAR</span>
            <span class="home-skills__main__skill" style="--lang-color: red;">TYPESCRIPT</span>
            <span class="home-skills__main__skill" style="--lang-color: red;">JAVASCRIPT</span>
            <span class="home-skills__main__skill" style="--lang-color: red;">HTML5</span>

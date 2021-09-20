@@ -40,7 +40,7 @@
     <div data-scroll-section class="home-page__huge-name__section">
       <div class="home-page__huge-name__container">
         <div class="home-page__huge-name" data-scroll data-scroll-direction="horizontal" data-scroll-speed="8">
-          Sholanke Olamide | Frontend Developer | Creative Developer
+          Sholanke Olamide | Frontend Engineer | Creative Developer
         </div>
       </div>
     </div>
